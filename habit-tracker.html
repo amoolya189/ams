@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Tracker</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .goal-container {
+        margin-bottom: 20px;
+      }
+      .goal-title {
+        font-weight: bold;
+      }
+      .goal-progress {
+        display: flex;
+        align-items: center;
+      }
+      .progress-bar {
+        width: 100px;
+        height: 20px;
+        background-color: #eee;
+        border-radius: 5px;
+      }
+      .progress-bar-fill {
+        height: 100%;
+        background-color: #4caf50;
+        border-radius: 5px;
+      }
+      .log-container {
+        margin-bottom: 10px;
+      }
+      .log-date {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Habit Tracker</h1>
+
+    <div class="goal-container">
+      <div class="goal-title">Drink 8 glasses of water</div>
+      <div class="goal-progress">
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 75%"></div>
+        </div>
+        <span>75%</span>
+      </div>
+    </div>
+
+    <div class="goal-container">
+      <div class="goal-title">Eat 5 servings of vegetables daily</div>
+      <div class="goal-progress">
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 60%"></div>
+        </div>
+        <span>60%</span>
+      </div>
+    </div>
+
+    <div class="goal-container">
+      <div class="goal-title">Exercise 30 minutes daily</div>
+      <div class="goal-progress">
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 80%"></div>
+        </div>
+        <span>80%</span>
+      </div>
+    </div>
+
+    <h2>Daily Logs</h2>
+
+    <div class="log-container">
+      <div class="log-date">July 5, 2024</div>
+      <ul>
+        <li>Workout completed: ✅</li>
+        <li>5 servings of vegetables consumed: ✅</li>
+        <li>8 glasses of water consumed: ✅</li>
+      </ul>
+    </div>
+
+    <div class="log-container">
+      <div class="log-date">July 4, 2024</div>
+      <ul>
+        <li>Workout completed: ✅</li>
+        <li>4 servings of vegetables consumed: ❌</li>
+        <li>7 glasses of water consumed: ✅</li>
+      </ul>
+    </div>
+  </body>
+</html>

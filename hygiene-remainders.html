@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hygiene Reminders</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f7f7f7;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin: 15px 0 5px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .message {
+        text-align: center;
+        color: #4caf50;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hygiene Reminders</h1>
+      <form id="reminderForm">
+        <label for="task">Select Task:</label>
+        <select id="task" name="task" required>
+          <option value="">-- Select a Task --</option>
+          <option value="Wash Hands">Wash Hands</option>
+          <option value="Brush Teeth">Brush Teeth</option>
+          <option value="Shower">Shower</option>
+          <option value="Sanitize Items">Sanitize Items</option>
+        </select>
+
+        <label for="date">Set Reminder Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Set Reminder Time:</label>
+        <input type="time" id="time" name="time" required />
+
+        <button type="button" onclick="setReminder()">Set Reminder</button>
+      </form>
+      <p class="message" id="message"></p>
+    </div>
+
+    <script>
+      function setReminder() {
+        const task = document.getElementById("task").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+
+        if (task && date && time) {
+          const message = Reminder set for '${task}' on ${date} at ${time}.;
+          document.getElementById("message").textContent = message;
+
+          // You can add backend integration or local notifications here.
+          console.log(message);
+        } else {
+          document.getElementById("message").textContent =
+            "Please fill in all fields.";
+        }
+      }
+    </script>
+  </body>
+</html>
