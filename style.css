@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.features {
+  text-align: center;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #f4f4f4;
+  text-decoration: none;
+  color: #333;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: scale(1.1); /* Zoom in effect */
+  background: #e8f5e9;
+}
+
+.feature-card:active {
+  transform: scale(0.95); /* Zoom out effect when clicked */
+}
+
+.footer {
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
